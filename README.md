@@ -8,7 +8,7 @@ Tracking Tropical Cyclones (TCs: 2018-2024) using 6-hourly ERA5 reanalysis data
 Necessary 6-hourly inputs:
 1. Sea level pressure (looking for local minima in sea level pressure to identify a potential cyclone)
 2. Geopotential at 300 and 500 hPa or temperature at 400 hPa (to detect a [warm core](https://journals.ametsoc.org/view/journals/mwre/147/3/mwr-d-18-0276.1.xml#:~:text=The%20typical%20warm%2Dcore%20height%20is%20at%20the,hPa%20(~14%20km)%20for%20category%205%20hurricanes.) of the storm, distinguishing the TC from a typical mid-latitude cyclone)
-3.  10m u-wind and 10m v-wind (not used for TC candidate, but we calculate maximum wind speed of the storm to study the storm's intensity evolution and to stitch together storms)
+3.  10m u-wind and 10m v-wind or perhaps 1000 hPa/surface winds will do (not used for TC candidate, but we calculate maximum wind speed of the storm to study the storm's intensity evolution and to stitch together storms)
 
 Files:
 - **era5_tracks_data_modify.ipynb**: ensure the ERA5 data is compatible with the TempestExtremes algorithm
